@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Login from './pages/Login';
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './context/authcontext';
 
 const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false } } });
 
